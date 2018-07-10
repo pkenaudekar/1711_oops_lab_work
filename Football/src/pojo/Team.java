@@ -1,11 +1,33 @@
 package pojo;
 
 public class Team {
-	private char name;
-	public char getName() {
+	private String name;
+	private int strength;
+	private int wins;
+	private int losses;
+	private int gamesPlayed;
+	
+	public Team() {
+		name="";
+		strength=0;
+		wins=0;
+		losses=0;
+		gamesPlayed=0;
+		System.out.println("Team(s) created");
+	}
+	
+	public Team(String name, Integer losses, Integer wins, Integer strength, Integer gamesPlayed) {
+		this.name=name;
+		this.strength=strength;
+		this.wins=wins;
+		this.losses=losses;
+		this.gamesPlayed=gamesPlayed;
+	}
+	
+	public String getName() {
 		return name;
 	}
-	public void setName(char name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	public int getStrength() {
@@ -32,10 +54,7 @@ public class Team {
 	public void setGamesPlayed(int gamesPlayed) {
 		this.gamesPlayed = gamesPlayed;
 	}
-	private int strength;
-	private int wins;
-	private int losses;
-	private int gamesPlayed;
+	
 	
 	public void playmatch()
 	{

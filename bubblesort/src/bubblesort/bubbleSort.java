@@ -1,10 +1,11 @@
 package bubblesort;
 
 public class bubbleSort {
-	private Integer i, j, temp;
+	//private Integer i, j, temp;
 		
-	public bubbleSort(Integer[] arr, Integer n) {
+	public static void bubblesort(Integer[] arr, Integer n) {
 		// TODO Auto-generated constructor stub
+	Integer i, j, temp;
 	boolean  swapped;
 	   for (i = 0; i < n-1; i++)
 	   {

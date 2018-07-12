@@ -10,7 +10,8 @@ public class sort {
 		Integer[] arr = new Integer[]{64, 34, 25, 12, 22, 11, 90}; 
 		System.out.println("Array Before sorting:" +Arrays.toString(arr));
 	    Integer n = arr.length;
-	    new bubbleSort(arr, n);
+	    //new bubbleSort(arr, n);
+	    bubbleSort.bubblesort(arr, n);
 	    System.out.println("Sorted array:" +Arrays.toString(arr));
 	
 	}

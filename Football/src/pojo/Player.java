@@ -1,6 +1,6 @@
 package pojo;
 
-public class Player {
+public class Player extends Team{
 	private Integer age;
 	private String name;
 	
@@ -35,5 +35,7 @@ public class Player {
 	{
 		System.out.println("kick");
 	}
+	
+	
 }
 

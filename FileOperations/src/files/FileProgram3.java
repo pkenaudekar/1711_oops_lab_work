@@ -1,11 +1,11 @@
 package files;
 
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-public class FileProgram2 {
+
+public class FileProgram3 {
 	static final String DB_LINK = "jdbc:oracle:thin:@localhost:1521:xe";
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
@@ -15,11 +15,11 @@ public class FileProgram2 {
 			//new Driver();
 			con = DriverManager.getConnection(DB_LINK, "pratik", "password");
 			Statement smt = con.createStatement();
-			String sampleQuery = "select * from test";
+			String sampleQuery = "select * from student";
 			ResultSet results = smt.executeQuery(sampleQuery);
 			while(results.next())
 			{
-				System.out.println("--->" + results.getString(2)+" "+ results.getString(1)+" "+ results.getString(3));
+				System.out.println("--->" + results.getString(1));
 			}
 		}
 		catch(Exception e)
@@ -31,5 +31,4 @@ public class FileProgram2 {
 			con.close();
 		}
 	}
-
 }

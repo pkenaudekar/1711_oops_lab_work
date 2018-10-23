@@ -30,6 +30,7 @@ public class FileProgram4 {
 			ResultSet results = smt.executeQuery(sampleQuery);
 			sampleQuery = "select * from test";
 			results = smt.executeQuery(sampleQuery);
+			
 			System.out.println("--->" + "Cust ID    "+"First Name    "+" "+"Last Name");
 			while(results.next())
 			{

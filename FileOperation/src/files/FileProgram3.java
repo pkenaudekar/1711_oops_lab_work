@@ -6,9 +6,11 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Scanner; 
 
-public class FileProgram3 {
+public class FileProgram3 
+{
 	static final String DB_LINK = "jdbc:oracle:thin:@localhost:1521:xe";
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception 
+	{
 		// TODO Auto-generated method stub
 		int custid = 0;
 		String firstname = null,lastname = null;

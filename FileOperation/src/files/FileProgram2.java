@@ -5,9 +5,11 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-public class FileProgram2 {
+public class FileProgram2 
+{
 	static final String DB_LINK = "jdbc:oracle:thin:@localhost:1521:xe";
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception 
+	{
 		// TODO Auto-generated method stub
 		Connection con = null;
 		try

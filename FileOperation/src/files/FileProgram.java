@@ -4,9 +4,11 @@ import java.io.FileWriter;
 import java.io.Writer;
 import java.util.Scanner;
 
-public class FileProgram {
+public class FileProgram
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		// TODO Auto-generated method stub
 		Scanner sc = null;
 		Writer wr = null;
